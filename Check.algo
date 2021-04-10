@@ -1,0 +1,26 @@
+ALGORITHM Calcul
+VAR
+    i:integer:=0;
+    sentence:=string;
+    c-vows:=0;
+    c-words:=1;
+    c-char:=1;
+
+
+BEGIN
+WHILE (sentence[i]<>".") DO
+   Read(sentence[i])
+   i=i+1;
+   c-char:=c-char+1;
+  IF (sentence[i]="a" OR sentence[i]="A" OR sentence[i] = "e" OR sentence[i]= "E" sentence[i]="o" OR sentence[i]="O" OR sentence[i] = "i" OR sentence[i]= "I" sentence[i]="u" OR sentence[i]="U" OR sentence[i] = "y" OR sentence[i]= "Y") THEN
+        c-vows:=c-vows+1;
+  END_IF
+  IF (sentence[i]=' ') THEN
+        c-words:=c-words+1;
+  END_IF
+END_WHILE
+write("Length of sentence is:",c-char)
+write("Number of vowels is:",c-vows)
+write("Number of words is:",c-words)
+
+END
