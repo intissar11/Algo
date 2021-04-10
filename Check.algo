@@ -1,7 +1,7 @@
 ALGORITHM Calcul
 VAR
-    i:integer:=0;
-    sentence:=string;
+    i:INTEGER:=0;
+    sentence:=STRING;
     c-vows:=0;
     c-words:=1;
     c-char:=1;
